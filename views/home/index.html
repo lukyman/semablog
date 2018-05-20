@@ -1,0 +1,10 @@
+{% extends '../layout.html' %}
+
+{% block content %}
+{% if user %}
+    {% include './auth-home.html' %}
+{% else %}
+    {% include './none-auth-home.html' %}
+{% endif %}
+
+{% endblock %}
